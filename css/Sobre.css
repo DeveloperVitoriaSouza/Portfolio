@@ -18,7 +18,7 @@ body{
 
   body::before {
     content: "";
-    background-image: url('/Paginas/fotos/binarios.png');
+    background-image: url('Portfolio/img/binarios.png');
     background-size: cover; 
     background-repeat: no-repeat;
     position: absolute;
@@ -141,7 +141,7 @@ body{
 }
 
 .front2 {
-  background-image: url(fotos/photo-1681396059172-7532b1ef8b47.jpg);
+  background-image: url('Portfolio/img/photo-1681396059172-7532b1ef8b47.jpg');
   background-size: cover;
   display: flex;
   align-items: center;
@@ -204,7 +204,7 @@ body{
 }
 
 .front3 {
-  background-image: url(fotos/Conquest\ Maps_\ World\ &\ USA\ Pin\ Board\,\ Pins\ &\ Posters\ Travel\ Maps.jpg);
+  background-image: url('Portfolio/img/maps.jpg');
   background-size: cover;
   display: flex;
   align-items: center;
