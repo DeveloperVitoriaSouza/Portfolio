@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(#010018 0%, rgb(3, 0, 34) 50%, rgba(10, 10, 46, 0.726) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; 
+}
+
+.img-container {
+  max-width: 50%; 
+  position: relative;
+}
+
+img {
+  width: 49vw;
+  height: 100vh;
+  max-height: 100vh;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+/* Informações*/
+.info {
+  flex: 0 0 calc(50% - 80px);
+  position: absolute;
+  margin-left: 90px;
+  width: calc(50% - 20px);
+  box-sizing: border-box; 
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 6.5vw;
+  padding-top: 150px;
+  background: linear-gradient(90deg, #00fffb, #4bb2c1, #91f0ff, #00fffb);
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  align-self: flex-end;
+  -webkit-text-fill-color: transparent;
+  -webkit-backface-visibility: hidden;
+  animation: degrade 10s linear infinite alternate;
+  display: block;
+}
+
+h1:hover {
+  transform: translate3d(0, -10px, 22px);
+  color: #fdffff;
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.8vw; 
+  letter-spacing: 0.1em;
+  font-family: "ROBOTO", sans-serif;
+  cursor: pointer;
+  margin-left: 100px; 
+  display: block;
+}
+
+/* Menu de Navegação */
+.menu {
+  display: flex;
+  font-family: 'Barlow', sans-serif;
+  width: 100vw;
+  padding-top: 25px;
+  position: absolute;
+  flex: 0 0 calc(50% - 80px);
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.Home {
+  color: #cddfff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px; 
+  font-size: 1.9vw; 
+    margin-left: 60px; 
+    margin-right: 10px;
+}
+
+.Home:hover {
+  padding-bottom: 0.2rem;
+  color: #ff0266;
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+
+/* Animação 'developer' */
+.pro:hover {
+  color: rgb(0, 237, 229);
+}
+
+.pro {
+  color: #c1c3ec;
+  text-shadow: 0 0 0 #ffffff;
+  -webkit-animation: loading 3s ease-in-out infinite alternate;
+}
+
+@keyframes degrade {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+@-webkit-keyframes loading {
+  to {
+    text-shadow: 10px 0 50px #3adeff;
+    color: #d000ff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column; 
+  }
+}
